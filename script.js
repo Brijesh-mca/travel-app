@@ -4,6 +4,17 @@ document.getElementById("booking-form").addEventListener("submit", function(even
 });
 
 
+
+//side Nvabar 
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+
 //
 // loader
 

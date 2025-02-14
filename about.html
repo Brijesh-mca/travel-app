@@ -9,17 +9,35 @@
 </head>
 <body>
 
-    <nav class="navbar">
-        <h1>LOGO</h1>
-        <div class="nav-center">
-            <a href="home.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="services.html">Services</a>
-            <a href="contact.html">Contact</a>
-        </div>
-        <a href="index.html" class="login-btn">Sign In</a>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="home.html" >Home</a>
+        <a href="about.html" >About Us</a>
+        <a href="services.html" >Services</a>
+        <a href="contact.html" >Contact</a>
+        <a href="index.html" >Sign Out</a>
 
-    </nav>
+      </div>
+
+    <!-- Hero Section -->
+  <div class="content">
+    <header class="hero">
+
+
+        <!-- navbar -->
+        <nav class="navbar">
+            <h1 id="boxx" class="logo-text">LOGO</h1>
+            <div class="nav-center" id="boxx" >
+                <a href="home.html" >Home</a>
+                <a href="about.html" >About Us</a>
+                <a href="services.html" >Services</a>
+                <a href="contact.html" >Contact</a>
+                <a href="" id="userText" ></a>
+
+            </div>
+            <a href="index.html" class="login-btn" id="boxx">Sign In</a>
+            <span style="font-size:30px;cursor:pointer" class="openNav" onclick="openNav()">&#9776;</span>
+         </nav>
 
  
     
@@ -84,6 +102,16 @@
     </section>
 
 
+    
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
 
 </body>
 </html>
